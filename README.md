@@ -31,7 +31,7 @@ __※ 생성자 함수의 속성__
 - POSITIVE_INFIITY : 양의 무한대 숫자
 - NEGATIVE_INFINITY : 음의 무한대 숫자
 
-__3. String 객체__  
+__3. String 객체__   
 __※ 속성__  
 - length : 문자열의 길이를 나타냅니다
 - String 객체의 메소드는 변경된 값을 리턴함  
