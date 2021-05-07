@@ -1,5 +1,57 @@
 # 홍지수 [202030137]
 
+## [ 05월 04일 ]
+__4. 생성자 함수와 프로토타입__  
+__※ 프로토타입__
+- 생성자 함수로 만든 객체는 프로토타입 공간에 메소드를 지정해서 모든 객체가 공유하도록 함
+- 해당 함수를 생성자 함수로 사용했을 때만 의미가 있음
+
+__5. 조금 더 나아가기__  
+__※ null__
+- ‘아예 값이 없는 상태‘를 구분할 때 null 활용
+- 값 : null
+- 자료형 : object
+
+__1. 기본 자료형과 객체 자료형의 차이__
+- 기본 자료형과 객체 자료형 모두 속성과 메소드를 사용함
+- 기본 자료형은 객체가 아니므로 속성과 메소드를 추가할 수 없음
+
+__2. Number 객체__
+- 자바스크립트에서 숫자를 표현할 때 사용  
+
+__※ 메소드__
+- toExponetial() : 숫자를 지수 표시로 나타낸 문자열을 리턴
+- toFixed() : 숫자를 고정소수점 표시로 나타낸 문자열을 리턴
+- toPrecision() : 숫자를 길이에 따라 지수 표시 또는 고정소수점 표시로 나타낸 문자열을 리턴  
+
+__※ 생성자 함수의 속성__
+- MAX_VALUE ; 자바스크립트의 숫자가 나타낼 수 있는 최대 숫자
+- MIN_VALUE : 자바스크립트의 숫자가 나타낼 수 있는 최소 숫자
+- NaN : 자바스크립트의 숫자로 나타낼 수 없는 숫자
+- POSITIVE_INFIITY : 양의 무한대 숫자
+- NEGATIVE_INFINITY : 음의 무한대 숫자
+
+__3. String 객체__  
+__※ 속성__  
+- length : 문자열의 길이를 나타냅니다
+- String 객체의 메소드는 변경된 값을 리턴함  
+
+__※ 메소드__  
+- charAt(position) : position에 위치하는 문자를 리턴
+- charCodeAt(position) : position에 위치하는 문자의 유니코드 번호를 리턴
+- concat(args) : 매개변수로 입력한 문자열을 이어 리턴
+- indexOf(serchString, position) : 앞에서부터 일치하는 문자열의 위치를 리턴
+- lastIndexOf(searchString, position) : 뒤에서부터 일치하는 문자열의 위치를 리턴
+- match(regExp) : 문자열 안에 regExp가 있는지 확인
+- replace(regExp, replacement) : regExp를 replacement로 바꾼 후 리턴
+- search(regExp) : regExp와 일치하는 문자열의 위치를 리턴
+- slice(start, end) : 특정 위치의 문자열을 추출해 리턴
+- split(separator, limit) : separator로 문자열을 잘라 배열 리턴
+- substr(start, count) : start부터 count만큼 문자열을 잘라 리턴
+- substring(start, end) : start부터 end까지 문자열 리턴
+- toLowerCase() : 문자열을 소문자로 바꾸어 리턴
+- toUpperCase() : 문자열을 대문자로 바꾸어 리턴
+***
 ## [ 04월 27일 ]
 __1. 객체 기본__  
 
