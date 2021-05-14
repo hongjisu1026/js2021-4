@@ -1,5 +1,85 @@
 # 홍지수 [202030137]
 
+## [ 05월 11일 ]
+__4. Date 객체__  
+|생성자 함수|설명|
+|:---:|:---:|
+|new Date()|현재 시간으로 Date 객체 생성|
+|new Date(<유닉스 타임>)|유닉스 타임으로 Date 객체 생성|
+|new Date(<시간 문자열>)|문자열로 Date 객체 생성|
+|new Date(<년>, <월-1>, <일>, <시간>, <분>, <초>, <밀리초>)|시간 요소를 기반으로 Date 객체 생성|
+
+__※ 메소드 활용__
+- Date 객체
+	- get○○() 형태 메소드, set○○() 형태 메소드 : FullYear, Month, Day, Hours, Minutes, Seconds 등 사용
+
+__5. Array 객체__  
+※ Array 객체의 기본 메소드
+- 대부분 파괴적 메소드로 자기 자신을 변경
+
+__※ ECMAScript5에서 추가된 메소드__
+|메소드|설명|
+|:---:|:---:|
+|forEach()|배열의 요소를 하나씩 뽑아 반복|
+|map()|콜백 함수에서 리턴하느 것을 기반으로 새로운 배열 생성|
+|filter()|콜백 함수에서 true를 리턴하는 것으로만 새로운 배열 생성 후 리턴|
+- 콜백 함수를 매개변수로 받음
+
+__6. 조금 더 나아가기__   
+__※ 프로토타입에 메소드 추가__
+- 프로토타입에 메소드를 추가하면 해당 자료형 전체에 추가 가능
+- String 생성자 함수의 prototype 속성에 contain() 메소드 추가  
+__※ JSON 객체__
+- 자바스크립트 객체를 사용한 데이터 표현 방법
+- 기본 형태 
+```
+{
+	{
+		“name”: “고구마”,
+		“price”: 1000
+	},
+	{
+		“name”: “감자”,
+		“price”: 500
+	},
+	{
+		“name”: “바나나”,
+		“price”: 1500
+	}
+}
+```
+- 제약 사항
+	- 문자열은 큰따옴표로 만듬
+	- 모든 키는 큰따옴표로 감싸야 함
+	- 숫자, 문자열, 불 자료형만 사용할 수 있음
+
+__1. 예외와 기본 예외 처리__
+- 예외 : 실행에 문제가 발생하면 자동 중단됨, 이렇게 발생한 오류
+- 예외 처리 : 오류에 대처할 수 있게 하는 것
+
+__2. 고급 예외 처리__
+- try catch finally 구문 (catch finally 구문 생략 가능)
+try {
+	//예외가 발생하면
+} catch (exception) {
+	//여기서 처리
+} finally {
+	//여기는 무조건 실행
+}
+
+__3. 예외 객체__
+- 예외가 발생하면 어떤 예외가 발생했는지 정보를 전달함
+- catch 구문의 괄호 안의 변수
+- name 속성과 message 속성이 있음
+
+__4. 예외 강제 발생__
+- throw 키워드 사용
+- throw 키워드 뒤에는 문자열 또는 Error 객체 입력
+throw ‘강제 예외’;
+
+
+
+***
 ## [ 05월 04일 ]
 __4. 생성자 함수와 프로토타입__  
 __※ 프로토타입__
@@ -36,21 +116,8 @@ __※ 속성__
 - length : 문자열의 길이를 나타냅니다
 - String 객체의 메소드는 변경된 값을 리턴함  
 
-__※ 메소드__  
-- charAt(position) : position에 위치하는 문자를 리턴
-- charCodeAt(position) : position에 위치하는 문자의 유니코드 번호를 리턴
-- concat(args) : 매개변수로 입력한 문자열을 이어 리턴
-- indexOf(serchString, position) : 앞에서부터 일치하는 문자열의 위치를 리턴
-- lastIndexOf(searchString, position) : 뒤에서부터 일치하는 문자열의 위치를 리턴
-- match(regExp) : 문자열 안에 regExp가 있는지 확인
-- replace(regExp, replacement) : regExp를 replacement로 바꾼 후 리턴
-- search(regExp) : regExp와 일치하는 문자열의 위치를 리턴
-- slice(start, end) : 특정 위치의 문자열을 추출해 리턴
-- split(separator, limit) : separator로 문자열을 잘라 배열 리턴
-- substr(start, count) : start부터 count만큼 문자열을 잘라 리턴
-- substring(start, end) : start부터 end까지 문자열 리턴
-- toLowerCase() : 문자열을 소문자로 바꾸어 리턴
-- toUpperCase() : 문자열을 대문자로 바꾸어 리턴
+
+
 ***
 ## [ 04월 27일 ]
 __1. 객체 기본__  
